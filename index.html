@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adib Hussain | Data Analyst & AI Specialist Portfolio</title>
+    <meta name="description" content="Adib Hussain - Data Analyst, AI Specialist, and Full-Stack Developer from Gorakhpur, India. Expert in Python, Machine Learning, SQL, and Blockchain Development.">
+    <meta name="keywords" content="Data Analyst, AI Specialist, Machine Learning, Python, SQL, Full Stack Developer, Blockchain">
+    <meta name="author" content="Adib Hussain">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Adib Hussain | Data Analyst & AI Specialist">
+    <meta property="og:description" content="Professional portfolio showcasing expertise in Data Analysis, AI, Machine Learning, and Full-Stack Development">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        /* Critical above-the-fold styles */
+        body { margin: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+        .hero { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .navbar { position: fixed; top: 0; width: 100%; z-index: 1000; backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <i class="fas fa-code"></i>
+                    <span>Adib Hussain</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-item active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-item" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#experience" class="nav-item" data-section="experience">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#projects" class="nav-item" data-section="projects">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#skills" class="nav-item" data-section="skills">
+                    <i class="fas fa-cogs"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#education" class="nav-item" data-section="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="#certificates" class="nav-item" data-section="certificates">
+                    <i class="fas fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+                <a href="#contact" class="nav-item" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-ring"></div>
+                        <div class="profile-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face&auto=format&q=80" alt="Adib Hussain" id="profileImg" />
+                            <div class="profile-overlay">
+                                <i class="fas fa-camera" id="changePhoto"></i>
+                            </div>
+                        </div>
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            <span>Available for work</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-emoji">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="name">Adib Hussain</span>
+                        <span class="title-role">
+                            <span class="typing-text" id="typingText">Data Analyst & AI Specialist</span>
+                            <span class="cursor">|</span>
+                        </span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Based in Gorakhpur, Uttar Pradesh</span>
+                    </p>
+                    
+                    <p class="hero-bio">
+                        Passionate about transforming data into actionable insights and building intelligent AI solutions. 
+                        Specialized in machine learning, blockchain technology, and full-stack development with a strong 
+                        foundation in computer science and artificial intelligence.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Major Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="25">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="7.3">0</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Let's Connect</span>
+                        </a>
+                        <button class="btn btn-secondary" onclick="downloadResume()">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </button>
+                        <a href="#projects" class="btn btn-outline">
+                            <i class="fas fa-eye"></i>
+                            <span>View Work</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="mailto:adibhussain143@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:+917270889201" class="social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">About</span>
+                    <span>Me</span>
+                </h2>
+                <p class="section-subtitle">
+                    Get to know more about my background, expertise, and passion for technology
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Background</h3>
+                        <p>
+                            I'm a dedicated Data Analyst and AI Specialist currently pursuing B.Tech in Computer Science 
+                            with specialization in Artificial Intelligence from PSIT College of Engineering. 
+                            With a solid 7.3 CGPA, I combine academic excellence with practical project experience.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Expertise</h3>
+                        <p>
+                            My expertise spans across data analysis, machine learning, blockchain development, and 
+                            full-stack web development. I specialize in Python, SQL, computer vision, and creating 
+                            intelligent systems that solve real-world problems.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Mission</h3>
+                        <p>
+                            I'm passionate about leveraging technology to create meaningful impact. Currently seeking 
+                            opportunities in data analysis, AI development, and software engineering where I can contribute 
+                            to innovative solutions and continue growing professionally.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-details" data-aos="fade-up" data-aos-delay="400">
+                    <div class="details-content">
+                        <h3>Personal Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <span class="info-label">Full Name</span>
+                                <span class="info-value">Adib Hussain</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">adibhussain143@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+91 7270889201</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Gorakhpur, Uttar Pradesh, India</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span class="info-label">Experience</span>
+                                <span class="info-value">Recent SQL Developer Intern</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-language"></i>
+                                <span class="info-label">Languages</span>
+                                <span class="info-value">Hindi, English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">Work</span>
+                    <span>Experience</span>
+                </h2>
+                <p class="section-subtitle">
+                    Professional experience and contributions in the field of technology
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="exp-header">
+                                <div class="exp-company">
+                                    <h3>Elevate Labs</h3>
+                                    <span class="company-type">Technology Company</span>
+                                </div>
+                                <div class="exp-duration">
+                                    <span class="duration">Sep 2025 - Oct 2025</span>
+                                    <span class="employment-type">Internship</span>
+                                </div>
+                            </div>
+                            
+                            <div class="exp-role">
+                                <h4>SQL Developer Intern</h4>
+                                <div class="role-tags">
+                                    <span class="tag">Database Development</span>
+                                    <span class="tag">Query Optimization</span>
+                                    <span class="tag">Data Analysis</span>
+                                </div>
+                            </div>
+                            
+                            <div class="exp-description">
+                                <p>
+                                    Contributed to database development and optimization projects while gaining hands-on experience 
+                                    in enterprise-level SQL development and data management systems.
+                                </p>
+                                
+                                <div class="responsibilities">
+                                    <h5><i class="fas fa-tasks"></i> Key Responsibilities</h5>
+                                    <ul>
+                                        <li><strong>Query Development:</strong> Assisted in designing, developing, and optimizing SQL queries for data extraction and comprehensive reporting</li>
+                                        <li><strong>Database Management:</strong> Worked with relational databases to ensure data integrity and efficient storage mechanisms</li>
+                                        <li><strong>Stored Procedures:</strong> Created and maintained complex stored procedures and functions for automated database operations</li>
+                                        <li><strong>Data Quality Assurance:</strong> Performed data validation, troubleshooting, and debugging to ensure accurate and consistent results</li>
+                                        <li><strong>Performance Optimization:</strong> Gained hands-on experience in database performance tuning and advanced query optimization techniques</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="achievements">
+                                    <h5><i class="fas fa-star"></i> Key Achievements</h5>
+                                    <ul>
+                                        <li>Improved query performance by optimizing complex SQL statements</li>
+                                        <li>Successfully implemented data validation procedures</li>
+                                        <li>Contributed to maintaining high data quality standards</li>
+                                        <li>Gained practical experience with enterprise database systems</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tech-stack">
+                                    <h5><i class="fas fa-tools"></i> Technologies Used</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">SQL Server</span>
+                                        <span class="tech-tag">Database Design</span>
+                                        <span class="tech-tag">Query Optimization</span>
+                                        <span class="tech-tag">Data Analysis</span>
+                                        <span class="tech-tag">Stored Procedures</span>
+                                        <span class="tech-tag">DBMS</span>
+                                        <span class="tech-tag">Data Validation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">Featured</span>
+                    <span>Projects</span>
+                </h2>
+                <p class="section-subtitle">
+                    Innovative solutions showcasing technical expertise and problem-solving skills
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Lane Detection Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">Computer Vision</div>
+                            <div class="project-tech-preview">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>Image Processing</span>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-eye project-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Lane Detection Module</h3>
+                            <div class="project-meta">
+                                <span class="project-duration">
+                                    <i class="far fa-calendar"></i>
+                                    Mar 2021 - Jun 2021
+                                </span>
+                                <span class="project-status featured">Featured</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-description">
+                            Developed an advanced lane detection algorithm using OpenCV to enhance self-driving car navigation systems. 
+                            The project focused on real-time image processing for autonomous vehicle applications with high accuracy 
+                            and robust performance in various conditions.
+                        </p>
+                        
+                        <div class="project-details">
+                            <div class="detail-section">
+                                <h4><i class="fas fa-cog"></i> Technical Implementation</h4>
+                                <ul>
+                                    <li><strong>Computer Vision Algorithms:</strong> Implemented advanced image processing techniques for accurate lane boundary detection</li>
+                                    <li><strong>Real-time Processing:</strong> Optimized algorithms for real-time lane detection with minimal latency</li>
+                                    <li><strong>OpenCV Integration:</strong> Utilized OpenCV libraries for comprehensive image manipulation and feature extraction</li>
+                                    <li><strong>Edge Detection:</strong> Enhanced detection accuracy through advanced filtering and edge detection algorithms</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4><i class="fas fa-trophy"></i> Key Features & Achievements</h4>
+                                <ul>
+                                    <li>Achieved 92% accuracy in lane boundary detection</li>
+                                    <li>Implemented real-time processing with sub-100ms response time</li>
+                                    <li>Robust performance across various weather and lighting conditions</li>
+                                    <li>Scalable architecture for integration with larger autonomous systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-chip"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-chip"><i class="fas fa-eye"></i> OpenCV</span>
+                            <span class="tech-chip"><i class="fas fa-image"></i> Image Processing</span>
+                            <span class="tech-chip"><i class="fas fa-brain"></i> Computer Vision</span>
+                            <span class="tech-chip"><i class="fas fa-chart-line"></i> NumPy</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="btn-project btn-primary" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="#" class="btn-project btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blockchain Anti-Counterfeiting Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">Blockchain Security</div>
+                            <div class="project-tech-preview">
+                                <span>Solidity</span>
+                                <span>Node.js</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-shield-alt project-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Anti-Counterfeiting System using Blockchain</h3>
+                            <div class="project-meta">
+                                <span class="project-duration">
+                                    <i class="far fa-calendar"></i>
+                                    Aug 2023 - May 2024
+                                </span>
+                                <span class="project-status complex">Complex</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-description">
+                            Built a comprehensive blockchain-based anti-counterfeiting system ensuring secure product authentication 
+                            through smart contracts and QR code verification. The system provides end-to-end product lifecycle 
+                            tracking with immutable records and decentralized storage.
+                        </p>
+                        
+                        <div class="project-details">
+                            <div class="detail-section">
+                                <h4><i class="fas fa-cog"></i> Technical Architecture</h4>
+                                <ul>
+                                    <li><strong>Smart Contracts:</strong> Developed secure smart contracts in Solidity for immutable product authentication</li>
+                                    <li><strong>Private Blockchain:</strong> Deployed and maintained a private blockchain network for enhanced security</li>
+                                    <li><strong>QR Code System:</strong> Designed comprehensive QR code-based verification using Python and Tkinter</li>
+                                    <li><strong>Decentralized Storage:</strong> Implemented secure distributed storage for complete product transaction history</li>
+                                    <li><strong>Database Integration:</strong> Seamlessly integrated MySQL for efficient hybrid data management</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4><i class="fas fa-star"></i> Key Features</h4>
+                                <ul>
+                                    <li>Immutable product authentication records on blockchain</li>
+                                    <li>Real-time verification through dynamic QR code generation</li>
+                                    <li>Complete product lifecycle tracking and audit trail</li>
+                                    <li>Enhanced data security through cryptographic hashing</li>
+                                    <li>User-friendly interface for product verification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-chip"><i class="fab fa-ethereum"></i> Solidity</span>
+                            <span class="tech-chip"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-chip"><i class="fas fa-tools"></i> Remix IDE</span>
+                            <span class="tech-chip"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-chip"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-chip"><i class="fas fa-desktop"></i> Tkinter</span>
+                            <span class="tech-chip"><i class="fas fa-eye"></i> OpenCV</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="btn-project btn-primary" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="#" class="btn-project btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Price Prediction Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">Machine Learning</div>
+                            <div class="project-tech-preview">
+                                <span>Python</span>
+                                <span>ML</span>
+                                <span>Web Dev</span>
+                            </div>
+                        </div>
+                        <div class="project-bg" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-car project-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Car Price Prediction Website</h3>
+                            <div class="project-meta">
+                                <span class="project-duration">
+                                    <i class="far fa-calendar"></i>
+                                    May 2025 - Oct 2025
+                                </span>
+                                <span class="project-status recent">Recent</span>
+                            </div>
+                        </div>
+                        
+                        <p class="project-description">
+                            Developed a comprehensive web-based car price prediction system using advanced regression models 
+                            and full-stack web development technologies. The platform provides accurate price estimates 
+                            based on multiple vehicle parameters with an intuitive user interface.
+                        </p>
+                        
+                        <div class="project-details">
+                            <div class="detail-section">
+                                <h4><i class="fas fa-cog"></i> Technical Implementation</h4>
+                                <ul>
+                                    <li><strong>Machine Learning Models:</strong> Implemented multiple regression algorithms for accurate price prediction</li>
+                                    <li><strong>Full-Stack Development:</strong> Built complete frontend and backend architecture with modern technologies</li>
+                                    <li><strong>Data Processing Pipeline:</strong> Comprehensive data cleaning, preprocessing, and feature engineering</li>
+                                    <li><strong>Model Integration:</strong> Seamlessly integrated ML models with web interface for real-time predictions</li>
+                                    <li><strong>Responsive Design:</strong> Created intuitive and fully responsive user interface for optimal user experience</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4><i class="fas fa-trophy"></i> Key Features</h4>
+                                <ul>
+                                    <li>Real-time car price estimation with high accuracy (90%+ precision)</li>
+                                    <li>Interactive web interface for easy data input and visualization</li>
+                                    <li>Comprehensive analysis of pricing factors and market trends</li>
+                                    <li>Mobile-responsive design for cross-platform compatibility</li>
+                                    <li>Advanced regression algorithms with model comparison features</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-chip"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-chip"><i class="fas fa-brain"></i> Machine Learning</span>
+                            <span class="tech-chip"><i class="fas fa-chart-line"></i> Regression</span>
+                            <span class="tech-chip"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            <span class="tech-chip"><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span class="tech-chip"><i class="fas fa-server"></i> Backend Dev</span>
+                            <span class="tech-chip"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="#" class="btn-project btn-primary" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="#" class="btn-project btn-secondary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-footer" data-aos="fade-up" data-aos-delay="400">
+                <p>Want to see more projects? Check out my GitHub profile for additional work and contributions.</p>
+                <a href="#" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View All Projects</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">Technical</span>
+                    <span>Skills</span>
+                </h2>
+                <p class="section-subtitle">
+                    Comprehensive expertise across multiple technologies and domains
+                </p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <span class="skill-level expert">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                            <div class="skill-experience">3+ years • Data Analysis, ML, Backend</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-java"></i>
+                                    <span>Java</span>
+                                </div>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • OOP, Data Structures</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-code"></i>
+                                    <span>C++</span>
+                                </div>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • Algorithms, System Programming</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-code"></i>
+                                    <span>C</span>
+                                </div>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="70"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • System Programming, Fundamentals</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5 / CSS3</span>
+                                </div>
+                                <span class="skill-level expert">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="95"></div>
+                            </div>
+                            <div class="skill-experience">3+ years • Responsive Design, Modern CSS</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • ES6+, DOM Manipulation, APIs</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                            <div class="skill-experience">1+ year • Backend Development, APIs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Analytics -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database & Analytics</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-database"></i>
+                                    <span>MySQL / SQL</span>
+                                </div>
+                                <span class="skill-level expert">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • Query Optimization, Design</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Data Analysis</span>
+                                </div>
+                                <span class="skill-level expert">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="88"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • Statistical Analysis, Insights</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-server"></i>
+                                    <span>DBMS</span>
+                                </div>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • Database Design, Management</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • Regression, Classification, Neural Networks</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Computer Vision</span>
+                                </div>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                            <div class="skill-experience">1+ year • OpenCV, Image Processing</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Data Processing</span>
+                                </div>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="88"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • Pandas, NumPy, Data Cleaning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git / GitHub</span>
+                                </div>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                            <div class="skill-experience">2+ years • Version Control, Collaboration</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-code"></i>
+                                    <span>VS Code</span>
+                                </div>
+                                <span class="skill-level expert">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="95"></div>
+                            </div>
+                            <div class="skill-experience">3+ years • Development Environment, Extensions</div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-ethereum"></i>
+                                    <span>Blockchain</span>
+                                </div>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                            <div class="skill-experience">1+ year • Solidity, Smart Contracts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="skill-category professional-skills" data-aos="fade-up" data-aos-delay="600">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Professional Skills</h3>
+                    </div>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <h4>Problem Solving</h4>
+                            <p>Strong analytical thinking and creative solution development</p>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-users"></i>
+                            <h4>Team Collaboration</h4>
+                            <p>Excellent communication and teamwork abilities</p>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-clock"></i>
+                            <h4>Time Management</h4>
+                            <p>Efficient project planning and deadline management</p>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-edit"></i>
+                            <h4>Technical Writing</h4>
+                            <p>Clear documentation and technical communication</p>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Negotiation</h4>
+                            <p>Strong negotiation and client interaction skills</p>
+                        </div>
+                        <div class="soft-skill">
+                            <i class="fas fa-search"></i>
+                            <h4>Testing & QA</h4>
+                            <p>Black box and white box testing methodologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">Educational</span>
+                    <span>Background</span>
+                </h2>
+                <p class="section-subtitle">
+                    Academic journey and learning achievements in computer science and AI
+                </p>
+            </div>
+            
+            <div class="education-timeline">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <div class="education-card">
+                            <div class="edu-header">
+                                <div class="edu-institution">
+                                    <h3>PSIT College of Engineering</h3>
+                                    <p class="institution-location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Kanpur, Uttar Pradesh, India
+                                    </p>
+                                </div>
+                                <div class="edu-duration">
+                                    <span class="duration">2020 - 2024</span>
+                                    <div class="cgpa">
+                                        <span class="cgpa-label">CGPA</span>
+                                        <span class="cgpa-value">7.3/10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="edu-details">
+                                <div class="degree-info">
+                                    <h4>Bachelor of Technology (B.Tech)</h4>
+                                    <p class="specialization">Computer Science & Engineering</p>
+                                    <p class="focus-area">Specialization in <strong>Artificial Intelligence</strong></p>
+                                </div>
+                                
+                                <div class="academic-highlights">
+                                    <h5><i class="fas fa-star"></i> Academic Highlights</h5>
+                                    <ul>
+                                        <li>Specialized curriculum focused on Artificial Intelligence and Machine Learning</li>
+                                        <li>Strong foundation in Computer Science fundamentals and advanced AI concepts</li>
+                                        <li>Hands-on experience with cutting-edge AI/ML projects and research</li>
+                                        <li>Active participation in technical workshops, seminars, and coding competitions</li>
+                                        <li>Consistent academic performance with focus on practical application</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="coursework">
+                                    <h5><i class="fas fa-book"></i> Key Coursework</h5>
+                                    <div class="course-grid">
+                                        <div class="course-category">
+                                            <h6>Core Computer Science</h6>
+                                            <div class="course-tags">
+                                                <span>Data Structures & Algorithms</span>
+                                                <span>Database Management Systems</span>
+                                                <span>Software Engineering</span>
+                                                <span>Operating Systems</span>
+                                                <span>Computer Networks</span>
+                                                <span>Object-Oriented Programming</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-category">
+                                            <h6>AI & Machine Learning</h6>
+                                            <div class="course-tags">
+                                                <span>Machine Learning</span>
+                                                <span>Artificial Intelligence</span>
+                                                <span>Neural Networks</span>
+                                                <span>Computer Vision</span>
+                                                <span>Natural Language Processing</span>
+                                                <span>Data Mining</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-category">
+                                            <h6>Mathematics & Statistics</h6>
+                                            <div class="course-tags">
+                                                <span>Linear Algebra</span>
+                                                <span>Probability & Statistics</span>
+                                                <span>Discrete Mathematics</span>
+                                                <span>Calculus</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="achievements">
+                                    <h5><i class="fas fa-trophy"></i> Notable Achievements</h5>
+                                    <ul>
+                                        <li>Maintained consistent academic performance throughout 4 years</li>
+                                        <li>Successfully completed multiple AI/ML projects with practical applications</li>
+                                        <li>Gained expertise in both theoretical concepts and practical implementation</li>
+                                        <li>Developed strong problem-solving and analytical thinking skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">Professional</span>
+                    <span>Certificates</span>
+                </h2>
+                <p class="section-subtitle">
+                    Recognized achievements and continuous learning in technology and development
+                </p>
+            </div>
+            
+            <div class="certificates-grid">
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-header">
+                        <div class="cert-badge">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="cert-status">
+                            <span class="status-badge verified">Verified</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Software Engineering Virtual Experience</h3>
+                        <h4>JPMorgan Chase & Co</h4>
+                        <div class="cert-description">
+                            <p>Completed comprehensive software engineering virtual experience program covering:</p>
+                            <ul>
+                                <li><strong>Full-Stack Development:</strong> Frontend and backend web development with modern technologies</li>
+                                <li><strong>Financial Technology:</strong> Applications in fintech and banking software systems</li>
+                                <li><strong>Agile Methodology:</strong> Scrum framework and iterative development practices</li>
+                                <li><strong>Code Quality:</strong> Code review processes, testing practices, and software quality assurance</li>
+                                <li><strong>Industry Standards:</strong> Professional development practices in enterprise environment</li>
+                            </ul>
+                        </div>
+                        <div class="cert-meta">
+                            <div class="cert-type">
+                                <i class="fas fa-tag"></i>
+                                <span>Professional Development</span>
+                            </div>
+                            <div class="cert-level">
+                                <i class="fas fa-signal"></i>
+                                <span>Advanced Level</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="#" class="cert-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Verify Certificate</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-header">
+                        <div class="cert-badge">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="cert-status">
+                            <span class="status-badge verified">Verified</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Agile Methodology Virtual Experience</h3>
+                        <h4>Professional Training Institute</h4>
+                        <div class="cert-description">
+                            <p>Mastered agile project management and development practices including:</p>
+                            <ul>
+                                <li><strong>Scrum Framework:</strong> Implementation of Scrum methodology in software development projects</li>
+                                <li><strong>Sprint Planning:</strong> Effective sprint planning, execution, and retrospective meetings</li>
+                                <li><strong>Team Collaboration:</strong> Enhanced team collaboration strategies and communication methods</li>
+                                <li><strong>Continuous Improvement:</strong> Kaizen principles and continuous improvement processes</li>
+                                <li><strong>Project Management:</strong> Agile project management tools and techniques</li>
+                            </ul>
+                        </div>
+                        <div class="cert-meta">
+                            <div class="cert-type">
+                                <i class="fas fa-tag"></i>
+                                <span>Project Management</span>
+                            </div>
+                            <div class="cert-level">
+                                <i class="fas fa-signal"></i>
+                                <span>Intermediate Level</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="#" class="cert-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Verify Certificate</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-header">
+                        <div class="cert-badge">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="cert-status">
+                            <span class="status-badge verified">Verified</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Data Analysis with Python</h3>
+                        <h4>IBM Developer Skills Network</h4>
+                        <div class="cert-description">
+                            <p>Successfully completed comprehensive data analysis course with passing grade covering:</p>
+                            <ul>
+                                <li><strong>Python Programming:</strong> Advanced Python programming for data science applications</li>
+                                <li><strong>Data Libraries:</strong> Extensive work with Pandas, NumPy, and Matplotlib libraries</li>
+                                <li><strong>Data Visualization:</strong> Creating insightful visualizations and interactive charts</li>
+                                <li><strong>Statistical Analysis:</strong> Statistical methods and hypothesis testing techniques</li>
+                                <li><strong>Real-world Projects:</strong> Hands-on projects with real datasets and business problems</li>
+                            </ul>
+                        </div>
+                        <div class="cert-meta">
+                            <div class="cert-type">
+                                <i class="fas fa-tag"></i>
+                                <span>Data Science</span>
+                            </div>
+                            <div class="cert-level">
+                                <i class="fas fa-signal"></i>
+                                <span>Advanced Level</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="#" class="cert-link" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Verify Certificate</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certificates-footer" data-aos="fade-up" data-aos-delay="400">
+                <p>Continuously learning and updating skills with the latest technologies and industry best practices.</p>
+                <div class="learning-platforms">
+                    <span>Learning from:</span>
+                    <div class="platform-logos">
+                        <span class="platform">Coursera</span>
+                        <span class="platform">IBM</span>
+                        <span class="platform">JPMorgan Chase</span>
+                        <span class="platform">LinkedIn Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="section interests-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">Personal</span>
+                    <span>Interests</span>
+                </h2>
+                <p class="section-subtitle">
+                    Hobbies and activities that inspire creativity and maintain work-life balance
+                </p>
+            </div>
+            
+            <div class="interests-grid">
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="interest-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Puzzle Games</h3>
+                    <p>Enjoy solving complex puzzles and brain teasers that enhance problem-solving skills and logical thinking</p>
+                </div>
+                
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="interest-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>Chess</h3>
+                    <p>Strategic thinking and planning through competitive chess gameplay, improving analytical and decision-making abilities</p>
+                </div>
+                
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="interest-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Football</h3>
+                    <p>Team sports enthusiast with passion for football strategy, teamwork, and understanding game analytics</p>
+                </div>
+                
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="interest-icon">
+                        <i class="fas fa-cricket"></i>
+                    </div>
+                    <h3>Cricket</h3>
+                    <p>Following cricket matches and understanding game analytics, statistics, and strategic gameplay elements</p>
+                </div>
+                
+                <div class="interest-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="interest-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Video Games</h3>
+                    <p>Gaming enthusiast interested in game development, interactive technology, and the psychology behind game design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="title-accent">Let's</span>
+                    <span>Connect</span>
+                </h2>
+                <p class="section-subtitle">
+                    Ready to collaborate on innovative projects and discuss exciting opportunities
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-intro">
+                        <h3>Get In Touch</h3>
+                        <p>
+                            I'm always excited to discuss new opportunities, innovative projects, and potential collaborations. 
+                            Whether you're looking for a data analyst, AI specialist, or full-stack developer, let's create something amazing together!
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Email</h4>
+                                <p>adibhussain143@gmail.com</p>
+                                <a href="mailto:adibhussain143@gmail.com">Send Email</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Phone</h4>
+                                <p>+91 7270889201</p>
+                                <a href="tel:+917270889201">Call Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Location</h4>
+                                <p>Gorakhpur, Uttar Pradesh</p>
+                                <span>India</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>LinkedIn</h4>
+                                <p>Aadibhussain</p>
+                                <a href="#" target="_blank">Connect</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-status">
+                        <div class="status-indicator">
+                            <span class="status-dot available"></span>
+                            <span>Available for new opportunities</span>
+                        </div>
+                        <div class="response-time">
+                            <i class="fas fa-clock"></i>
+                            <span>Usually responds within 24 hours</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-up" data-aos-delay="200">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-header">
+                            <h3>Send a Message</h3>
+                            <p>Have a project in mind? Let's discuss how we can work together!</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="freelance">Freelance Work</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                <span>I'd like to receive updates about new projects and articles</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                        </button>
+                        
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-info">
+                        <h3>Adib Hussain</h3>
+                        <p>Data Analyst & AI Specialist</p>
+                        <p class="tagline">Transforming data into insights, building intelligent solutions</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="mailto:adibhussain143@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:+917270889201" class="social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Data Analysis</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Blockchain Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:adibhussain143@gmail.com">Email Me</a></li>
+                            <li><a href="tel:+917270889201">Call Me</a></li>
+                            <li><a href="#contact">Contact Form</a></li>
+                            <li><a href="#" onclick="downloadResume()">Download CV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-text">
+                    <p>&copy; 2025 Adib Hussain. All rights reserved.</p>
+                </div>
+                <div class="footer-meta">
+                    <p>Built with <i class="fas fa-heart"></i> using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
