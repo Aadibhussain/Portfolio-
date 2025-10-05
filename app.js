@@ -811,7 +811,7 @@ function downloadResume() {
     const app = window.portfolioApp;
     
     // For demo purposes - replace with actual resume file
-    const resumeUrl = '#'; // Replace with: './assets/Adib_Hussain_Resume.pdf'
+    const resumeUrl = 'adib_hussain_CVNEW.pdf'; // Replace with: './assets/Adib_Hussain_Resume.pdf'
     
     if (resumeUrl === '#') {
         app.showNotification('📄 Resume download will be available soon! Please contact me directly for the latest version.', 'info', 6000);
